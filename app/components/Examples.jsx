@@ -1,5 +1,5 @@
 var React = require('react');
-// 
+//
 // var Examples = React.createClass({
 //   render: function () {
 //     return(
@@ -11,7 +11,7 @@ var React = require('react');
 
 var Examples = (props) => {
   return (
-    <h1>Examples</h1>
+    <h1>Examples!</h1>
   );
 };
 
