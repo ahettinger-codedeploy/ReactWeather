@@ -27225,6 +27225,11 @@
 	      'p',
 	      null,
 	      'Welcome to Examples Page!'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Here\'s another paragraph'
 	    )
 	  );
 	};
