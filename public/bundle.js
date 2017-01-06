@@ -27202,7 +27202,7 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
-	// 
+	//
 	// var Examples = React.createClass({
 	//   render: function () {
 	//     return(
@@ -27214,9 +27214,18 @@
 
 	var Examples = function Examples(props) {
 	  return React.createElement(
-	    'h1',
+	    'div',
 	    null,
-	    'Examples'
+	    React.createElement(
+	      'h1',
+	      null,
+	      'Examples!'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to Examples Page!'
+	    )
 	  );
 	};
 
