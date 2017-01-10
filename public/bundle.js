@@ -25504,11 +25504,19 @@
 	    null,
 	    React.createElement(Nav, null),
 	    React.createElement(
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'columns medium-6 large-4 small-centered' },
+	        props.children
+	      )
+	    ),
+	    React.createElement(
 	      'h2',
 	      null,
 	      'Main component'
-	    ),
-	    props.children
+	    )
 	  );
 	};
 
@@ -27335,6 +27343,9 @@
 	'use strict';
 
 	var React = __webpack_require__(8);
+
+	var _require = __webpack_require__(166),
+	    Link = _require.Link;
 	//
 	// var Examples = React.createClass({
 	//   render: function () {
@@ -27351,18 +27362,35 @@
 	    null,
 	    React.createElement(
 	      'h1',
-	      null,
+	      { className: 'text-center' },
 	      'Examples!'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Welcome to Examples Page!'
+	      'Here are a few example locations to try out'
 	    ),
 	    React.createElement(
-	      'p',
+	      'ol',
 	      null,
-	      'Here\'s another paragraph'
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Los%20Angeles' },
+	          'Los Angeles'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Beaulah' },
+	          'Beaulah, MI'
+	        )
+	      )
 	    )
 	  );
 	};
